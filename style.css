@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    
+
+}
+.nav{
+position: relative;
+z-index: 2;
+display: flex;
+justify-content: space-around;
+height: auto;
+padding: 15px 20px;
+gap: 10px;
+flex-wrap: wrap;
+align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+     
+
+}
+.nav a{
+    color: white;
+    font-size: large;
+    text-decoration: none;
+font-family: sans-serif;
+padding: 20px;
+border-radius: 40%;
+}
+
+.nav a:hover{
+    background-color: rgba(191, 167, 106,0.4);
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    object-fit: cover;
+}
+.logo{
+    position: relative;
+    display: flex;
+    top: 100px;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+   width: 100%;
+   max-width: 600px;
+}
+
+.side.social{
+    position: fixed;
+    width: 60px;
+    height: auto;
+    right: 5px;
+    gap: 20px;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+.side.contact{
+    position: fixed;
+    width: 60px;
+    height: auto;
+    right: 5px;
+    gap: 20px;
+    top: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.side a{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+    font-size: x-large;
+}
+    
+#face:hover{
+    background-color: #1877F2;
+}
+#you:hover{
+    background-color: #FF0000;}
+#insta:hover{
+    background-color: #E1306C;
+}
+#twit:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+#phone:hover{
+    background-color: #25D366;
+}
+#mail:hover{
+    background-color: #D44638;
+}
+.first{
+    
+}
