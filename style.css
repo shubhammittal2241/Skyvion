@@ -5,8 +5,15 @@
 .main{
     height: 100vh;
     width: 100%;
-    
 
+}
+.box{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    opacity: 0.4;
+    background-color: black;
 }
 .nav{
 position: sticky;
@@ -38,7 +45,7 @@ border-radius: 40%;
 video{
     height: 100%;
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: -1;
     object-fit: cover;
 }
@@ -104,7 +111,4 @@ video{
 }
 #mail:hover{
     background-color: #D44638;
-}
-.first{
-    
 }
