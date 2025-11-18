@@ -118,7 +118,7 @@ video {
   z-index: -1;
   width: 100vw;
   display: flex;
-  position: relative;
+  position: absolute;
 }
 .box2 {
   background-color: white;
@@ -136,6 +136,7 @@ video {
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   position: relative;
+  opacity: 0.9;
   z-index: 3;
 }
 
@@ -143,9 +144,18 @@ video {
   width: 100%;
   z-index: 2;
   margin: 10px;
+  border-radius: 10px;
   object-fit: cover;
   display: block;
   height: auto;
+  cursor: pointer;
+}
+.left img:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+border-radius: 0;
+
 }
 .right {
   display: flex;
@@ -171,7 +181,7 @@ video {
     font-family:NORMAL;
 }
 .right .line{
-    height: 60px;
+    height: 190px;
     width: 3px;
     background-color: black;
 }
