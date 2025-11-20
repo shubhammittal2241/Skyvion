@@ -4,9 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-a:hover{
-  color: rgb(129, 99, 23);
-}
+
 .header{
 background-image: url(assets/cont.jpg);    
 
@@ -291,6 +289,10 @@ flex-direction: column;
 }
 .infosection.sec a{
     color: white;
+
+}
+.infosection a:hover {
+    color: rgb(129, 99, 23);
 
 }
 #trade{
