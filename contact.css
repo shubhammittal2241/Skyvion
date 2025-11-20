@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a:hover{
+  color: rgb(129, 99, 23);
+}
+.header{
+background-image: url(assets/cont.jpg);    
+
+height: 50vh;
+width: 100vw;
+  background-size: cover;     
+  background-position: center;
+  background-repeat: no-repeat;
+    z-index: 10;
+    margin-bottom: 30px;
+    position: relative; 
+
+}
+.box{
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.nav {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+  padding: 15px 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+}
+.nav a {
+  color: white;
+
+  font-size: large;
+  text-decoration: none;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.nav a:hover:not(:last-child) {
+    border-bottom: 2px solid rgb(129, 99, 23);
+}
+.nav svg:hover {
+  color: rgb(129, 99, 23);
+}
+.info .line{
+  overflow-x: hidden;
+  width: 20vw;
+  height: 3px;
+  background-color: rgb(163, 89, 9);
+ display: inline-block;
+ margin: 9px;
+}
+.top{
+  display: flex;
+  width: 100%;
+  height:20vh;
+  justify-content: center;
+  align-items: center;
+}
+.info h1{
+  font-size: 50px;
+    color: black;
+
+text-align: center;  margin-top: 10px;
+  font-weight: lighter;
+  font-family:'Times New Roman', Times, serif;
+
+}
+.mid{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+  margin-bottom: 150px;
+}
+.sec{
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap:wrap;
+  
+}
+
+.mail,.phone,.locate,.message{
+  background-color: lightgray;
+  height: 220px;
+  width: 350px;
+  margin: 10px;
+  background-color: rgba(0,0,0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+
+}
+.mail i,.phone i,.locate i,.message i{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  width: 70px;
+  height: 70px;
+  background-color: rgba(182, 103, 6, 0.5);
+  border-radius: 50%;
+  padding-top: 15px; 
+
+}
+.mail span,.phone span,.locate span,.message span{
+  color: white;
+  margin-top: 20px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.mail:hover,.phone:hover,.locate:hover,.message:hover{
+  background-color: rgba(0,0,0, 0.9);
+  cursor: pointer;
+}
+.touch{
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/contact.jpg);
+  position: relative;
+  z-index: 0;
+
+}
+.touch .box{
+  opacity: 0.86;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.content{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+z-index: 5;
+height: 90%;
+flex-direction: column;
+color: white;
+text-align: center;
+}
+#lin{
+  margin-bottom: 50px;
+}
+
+#let{
+color: white;
+font-size: 15px;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+letter-spacing: 4px;
+position: relative;
+left: 15px;
+
+}
+.first{
+  margin-bottom: 20px;
+}
+#get{
+  color: white;
+  font-size: 50px;
+  font-family:'Times New Roman', Times, serif ;
+  letter-spacing: 10px;
+  font-weight: bolder;
+  
+  margin-bottom: 20px;
+}.line3{
+  display: inline-block;
+  width: 1px;
+  position: relative;
+  top: 20px;
+  height: 80px;
+  left: 10px;
+  background-color: white;
+}
+
+.inp{display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 60px;
+  column-gap: 50px;
+
+}
+.inp>*{
+  background-color: transparent;
+  color: white;
+  width: 30vw;
+  border: none;
+  border-bottom: 1px solid white;
+  text-align: start;
+  padding: 15px;
+  outline: none;
+
+}.inp textarea{
+  width: 100%;
+  grid-column: span 2;
+}
+
+.inp>*::placeholder{
+  color: white;
+  letter-spacing: 2px;
+}
+.content button{
+  margin-top: 90px;
+  padding: 10px 40px;
+background: transparent;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+button:hover{
+  background-color: rgba(0, 0, 0,0.3);
+}
+
+.about{
+  height: auto;
+  background-color: black;
+  display: flex;
+align-items: center;
+flex-direction: column;
+
+}
+.bottom{
+  display: flex;
+  width: 70%;
+border-bottom: 1px solid gray;  
+align-items: center;
+flex-direction: column;
+}
+.sky{
+  margin-bottom: 30px;
+}
+.infosection{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap:wrap;
+  width: 100%;
+  margin-bottom: 70px;
+
+}
+
+
+
+.mail2,.phone2,.locate2,.message2{
+  color: white;
+  margin-right: 10px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+
+}
+
+.mail2 i,.phone2 i,.locate2 i,.message2 i{
+  color: rgba(182, 103, 6);
+  padding-top: 15px; 
+
+}
+.infosection.sec{
+  gap: 20px;
+}
+.infosection.sec a{
+    color: white;
+
+}
+#trade{
+  color: gray;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
