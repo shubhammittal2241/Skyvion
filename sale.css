@@ -1,29 +1,27 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-.header{
-background-image: url(assets/cont.jpg);    
-height: 50vh;
-width: 100vw;
-  background-size: cover;     
-  background-position: center;
+.header {
+  background-image: url(assets/salehead.jpg);
+  height: 50vh;
+  width: 100vw;
+  background-size: cover;
   background-repeat: no-repeat;
-    z-index: 10;
-    margin-bottom: 30px;
-    position: relative; 
-
+  z-index: 10;
+  margin-bottom: 30px;
+  position: relative;
 }
-.box{
-    background-color: black;
-    opacity: 0.6;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
+.box {
+  background-color: black;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
 }
 
 .nav {
@@ -49,86 +47,74 @@ width: 100vw;
 }
 
 .nav a:hover:not(:last-child) {
-    border-bottom: 2px solid rgb(129, 99, 23);
+  border-bottom: 2px solid rgb(129, 99, 23);
 }
 .nav svg:hover {
   color: rgb(129, 99, 23);
 }
-.info .line{
+.top .line {
   overflow-x: hidden;
   width: 20vw;
   height: 3px;
   background-color: rgb(163, 89, 9);
- display: inline-block;
- margin: 9px;
+  display: inline-block;
+  margin: 9px;
 }
-.top{
+.top {
   display: flex;
   width: 100%;
-  height:20vh;
+  height: 20vh;
   justify-content: center;
   align-items: center;
 }
-.info h1{
+.top h1 {
   font-size: 50px;
-    color: black;
-text-align: center;  margin-top: 10px;
-  font-weight: lighter;
-  font-family:'Times New Roman', Times, serif;
-
-}
-.mid{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 20px;
-  margin-bottom: 150px;
-}
-.sec{
-  height: auto;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap:wrap;
-  
-}
-
-.mail,.phone,.locate,.message{
-  background-color: lightgray;
-  height: 220px;
-  width: 350px;
-  margin: 10px;
-  background-color: rgba(0,0,0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-decoration: none;
-
-}
-.mail i,.phone i,.locate i,.message i{
-  color: white;
+  color: black;
   text-align: center;
-  font-size: 40px;
-  width: 70px;
-  height: 70px;
-  background-color: rgba(182, 103, 6, 0.5);
-  border-radius: 50%;
-  padding-top: 15px; 
-
+  margin-top: 10px;
+  font-weight: lighter;
+  font-family: "Times New Roman", Times, serif;
 }
-.mail span,.phone span,.locate span,.message span{
-  color: white;
-  margin-top: 20px;
-  font-size: 15px;
-  letter-spacing: 1px;
+.map{
+    margin-bottom:50px;
 }
-.mail:hover,.phone:hover,.locate:hover,.message:hover{
-  background-color: rgba(0,0,0, 0.9);
-  cursor: pointer;
+.all{
+    display: flex;
+    gap: 3px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    justify-content: center;}
+.property{
+  
+    width: 100%;
+}
+.details{
+text-align: center;
+background-color: rgb(0,0,0,0.8);
+padding: 10px;
+margin-bottom: 10px;
+}
+.details h2,.details p{
+    color: white;
+    margin: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+.house{
+    width: 33%;
+    height: 25%;
+    cursor: pointer;
+}
+.house:hover{
+    background-color: black;
+}
+.house img{
+    width: 100%;
+    height: 50vh;
+    display: block;
+    
 }
 .touch{
   background-color: white;
@@ -299,3 +285,4 @@ flex-direction: column;
   margin-bottom: 5%;
   text-align: center;
 }
+
