@@ -2,18 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 .head {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .box {
   height: 100%;
   width: 100%;
-  top: 0;
   position: absolute;
   opacity: 0.4;
   background-color: black;
@@ -21,11 +23,12 @@
 }
 
 .nav {
-  position: sticky;
+  position: fixed;
   z-index: 2;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: auto;
+  width: 100%;
   padding: 15px 20px;
   gap: 10px;
   flex-wrap: wrap;
@@ -37,14 +40,15 @@
   font-size: large;
   text-decoration: none;
   font-family: sans-serif;
-  padding: 20px;
-  border-radius: 40%;
+  padding: 30px;
+  
 }
-
-.nav a:hover {
-  background-color: rgba(191, 167, 106, 0.4);
+.nav a:hover:not(:last-child) {
+    border-bottom: 2px solid rgb(129, 99, 23);
 }
-
+.nav svg:hover {
+  color: rgb(129, 99, 23);
+}
 video {
   height: 100%;
   width: 100%;
@@ -54,12 +58,17 @@ video {
 }
 .logo {
   position: relative;
+  top: 25vh;
   display: flex;
   z-index: 10;
   justify-content: center;
   align-items: center;
 }
-
+@media (max-width: 568px) {
+  .logo {
+    top: 50vh;
+  }
+}
 .logo img {
   width: 100%;
   max-width: 600px;
@@ -117,10 +126,11 @@ video {
 .first {
   height: 80vh;
   background-image: url(assets/back.png);
-  z-index: -1;
+  z-index: 0;
   width: 100vw;
   display: flex;
-  position: absolute;
+  margin-bottom: 30px;
+  position: relative;
 }
 .box2 {
   background-color: white;
@@ -190,8 +200,102 @@ video {
     grid-template-columns: 1fr;
     width: 100%;
   }
-  .first{
+  .first {
     height: auto;
   }
-  }
+}
+
+.second {
+  height: 50vh;
+  width: 85vw;
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 0;
+  background-image: url(https://robingaur.com/wp-content/themes/rgaur-pending.com/assets/images/qs-bg.jpg);
+  margin-bottom: 30px;
+}
+.box3 {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.86;
+  z-index: -1;
+  position: absolute;
+}
+.topic {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.second h1 {
+  font-size: 40px;
+  font-weight: 100;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  letter-spacing: 10px;
+  margin-left: 90px;
+  margin-bottom: 10px;
+}
+.line2 {
+  width: 80px;
+  top: 30px;
+  background-color: rgb(255, 140, 0);
+  height: 2px;
+  position: relative;
+  z-index: 10;
+}
+.second h2 {
+  font-size: 70px;
+  color: white;
+  position: relative;
+  z-index: 10;
+  margin-left: 50px;
+  letter-spacing: 5px;
+  font-style: italic;
+  font-weight: 100;
+}
+.search {
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 75%;
+  z-index: 10;
+}
+.inner {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  row-gap: 90px;
+  column-gap: 25px;
+}
+.inner select {
+  background-color: transparent;
+  color: white;
+  font-size: large;
+  cursor: pointer;
+  letter-spacing: 0.6px;
+  padding: 20px;
+  border: none;
+  border-bottom: 1px solid white;
+  margin: auto;
+}
+.inner button {
+  background-color: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  color: white;
+  position: relative;
+  left: 100px;
+}
 
