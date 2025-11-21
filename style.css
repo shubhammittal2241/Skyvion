@@ -2,9 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
-      text-decoration: none;
-
+  text-decoration: none;
 }
 .head {
   height: 100vh;
@@ -43,10 +41,9 @@
   text-decoration: none;
   font-family: sans-serif;
   padding: 30px;
-  
 }
 .nav a:hover:not(:last-child) {
-    border-bottom: 2px solid rgb(129, 99, 23);
+  border-bottom: 2px solid rgb(129, 99, 23);
 }
 .nav svg:hover {
   color: rgb(129, 99, 23);
@@ -300,4 +297,3 @@ video {
   position: relative;
   left: 100px;
 }
-
