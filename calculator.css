@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box {
+  background-image: url("assets/emi.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#head {
+  color: white;
+  margin-bottom: 2%;
+}
+
+.calculator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70%;
+  width: 80%;
+  max-width: 1000px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgb(208, 159, 36);
+  border-radius: 40px;
+  padding: 40px;
+}
+
+#left,
+#right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 48%;
+}
+
+#right {
+  align-items: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 40px;
+}
+
+.input-wrapper {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+label {
+  font-size: 28px;
+  color: #ddd;
+}
+
+input[type="number"] {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 8px 8px;
+  width: 120px;
+  color: white;
+  text-align: right;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #444;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.result-title {
+  font-size: 25px;
+  color:white
+
+}
+
+.emi-value {
+  font-size: 42px;
+  font-weight: bold;
+  color: rgb(208, 159, 36); 
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px rgba(208, 159, 36, 0.3);
+}
+
+.summary-item {
+  margin: 5px 0;
+  font-size: 20px;
+  color: #ccc;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+
+
+#apply-btn {
+  margin-top: 30px;
+  padding: 12px 35px;
+  background-color: rgb(208, 159, 36);
+  color: black;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#apply-btn:hover {
+  transform: scale(1.05);
+}
