@@ -302,3 +302,21 @@ width: auto;
   position: relative;
   left: 100px;
 }
+.inner button:hover {
+  background-color: rgba(175, 124, 7,0.5);
+}
+@media (max-width: 768px) {
+  .second {
+    height: auto;
+    flex-direction: column;
+  }
+  .inner {
+    grid-template-columns: repeat(2, auto);
+    row-gap: 40px;
+    column-gap: 20px;
+  }
+  .inner button {
+   margin-bottom: 10px;
+   height: 40px;
+  }
+}
