@@ -1,3 +1,10 @@
+let logo = document.getElementById("logo");
+logo.addEventListener("click", function () {
+  window.open("index.html", "_self");
+});
+
+
+
 let loanrange = document.getElementById("amountRange");
 let loaninput = document.getElementById("amountInput");
 loanrange.addEventListener("input", function () {

@@ -123,11 +123,13 @@ video {
   background-color: #d44638;
 }
 .first {
-  height: 80vh;
+height: auto;
+width: auto;
   background-image: url(assets/back.png);
   z-index: 0;
   width: 100vw;
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 30px;
   position: relative;
 }
@@ -149,6 +151,7 @@ video {
   position: relative;
   opacity: 0.9;
   z-index: 3;
+  order: 2;
 }
 
 .left img {
@@ -169,13 +172,15 @@ video {
 }
 .right {
   display: flex;
-  width: 40%;
+  margin: auto;
   z-index: 3;
   position: relative;
   justify-content: center;
   float: right;
   align-items: center;
   flex-direction: column;
+  order: 1;
+  
 }
 
 .right h2 {
