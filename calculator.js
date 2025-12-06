@@ -13,12 +13,11 @@ let timeinput = document.getElementById("tenureInput");
 timerange.addEventListener("input", function () {
   timeinput.value = timerange.value;
 });
-
+window.onload = calculate_emi;
 loanrange.addEventListener("input", calculate_emi);
 raterange.addEventListener("input", calculate_emi);
 timerange.addEventListener("input", calculate_emi);
 
-document.addEventListener("DOMContentLoaded", calculate_emi);
 
 function calculate_emi() {
   let p = Number(loaninput.value);
